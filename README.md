@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/soundsmetallic/stats_preview_card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Live Site URL](https://soundsmetallic.github.io/stats_preview_card/)
 
 ## My process
 
