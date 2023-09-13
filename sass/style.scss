@@ -1,0 +1,203 @@
+$clr-primary-100: hsl(233, 47%, 7%);
+$clr-primary-200: hsl(244, 38%, 16%);
+$clr-primary-300: hsl(277, 64%, 61%);
+
+$clr-neutral-100: white;
+$clr-neutral-200: hsla(0, 0%, 100%, 0.75);
+$clr-neutral-300: hsla(0, 0%, 100%, 0.6);
+
+$font-family-1: 'Inter', sans-serif;
+$font-family-2: 'Lexend Deca', sans-serif;
+
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Background Styling */
+
+main {
+    background: $clr-primary-100;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Card Styling */
+
+.preview-card {
+    display: flex;
+    width: 65%;
+}
+
+.copy {
+    flex: 1;
+    background: $clr-primary-200;   
+    border-radius: .5rem 0 0 .5rem;
+    padding: 4.5rem 7.75rem 4.5rem 4.5rem;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    color: $clr-neutral-100;
+    font-family: $font-family-1;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+.queries h2 {
+    text-transform: uppercase;
+}
+
+span {
+    color: $clr-primary-300;
+}
+
+p {
+    color: $clr-neutral-200;
+    font-family: $font-family-1;
+}
+
+.customer-data {
+    margin-top: 5.5rem;
+    display: flex;
+    justify-content: space-between;
+    p {
+        text-transform: uppercase;
+        font-family: $font-family-2;
+        color: $clr-neutral-300;
+        margin-top: 1rem;
+        font-size: .7rem;
+    }
+}
+
+/* Image Styling */
+
+.img-container {
+    flex: 1;
+    border-radius: 0 .5rem .5rem 0;
+    background: center / cover no-repeat url(../images/image-header-desktop.jpg);
+    min-width: 50%;
+    max-height: 100%;
+    position: relative;
+}
+
+.overlay {
+    border-radius: 0 .5rem .5rem 0;
+    background: $clr-primary-300;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    filter: brightness(.5) saturate(2.25);
+}
+
+/* Footer */
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+    .copy {
+        max-width: 60%;
+        padding: 3rem 3.875rem 3rem 3rem;
+    }
+    
+    h1 {
+        margin-bottom: 1.25rem;
+    }
+
+    .customer-data {
+        margin-top: 2.25rem;
+    }
+
+    .img-container {
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .preview-card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .preview-card {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .preview-card {
+        flex-direction: column-reverse;
+        width: 85%;
+        height: 80%;
+        text-align: center;
+        min-width: 340px;
+    }
+
+    .customer-data {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 40%;
+    }
+
+    .companies,
+    .templates,
+    .queries {
+        flex: 1;
+        margin-top: 1.25rem;
+    }
+
+    .img-container {
+        max-width: 100%;
+        max-height: 30%;
+    }
+
+    .img-container,
+    .overlay {
+        border-radius: .5rem .5rem 0 0;
+    }
+
+    .copy {
+        box-sizing: border-box;
+        padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+        border-radius: 0 0 .5rem .5rem;
+        max-width: 100%;
+        max-height: 70%;
+    }
+
+    h1 {
+        margin: 1rem 0 1.86rem 0;
+    }
+
+    .customer-data p {
+        margin-top: .25rem;
+    }
+}
