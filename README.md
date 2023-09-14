@@ -32,7 +32,7 @@ Users should be able to:
 
 ## My process
 
-- Set up my wokr environment.
+- Set up my work environment.
 - Format the html file.
 - Add the fonts.
 - Style the document to match the design.
